@@ -1,0 +1,36 @@
+.Title {
+  color: $white;
+  height: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+}
+
+.Title--home {
+  background-color: $blue-1;
+}
+
+.Title--school {
+  background-color: $blue-2;
+}
+
+.Title--events {
+  background-color: $ginger-red-2;
+}
+
+.Title--products {
+  background-color: $yellow;
+}
+
+.Title--contact {
+  background-color: $aqua;
+}

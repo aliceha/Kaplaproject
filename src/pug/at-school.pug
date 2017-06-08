@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Alice Habay')
+    title Kapla
+    link(href='style.css', rel='stylesheet')
+    link(href='img/favicon.png', type='image/x-png', rel='icon')
+
+  body(class='Page')
+    include includes/header.pug
+
+    section(class="Stripe u-container")
+      nav(class="Stripe-nav")
+        a(href="/", class="Stripe-navLink") Home
+        a(href="/products.html", class="Stripe-navLink") Products
+        a(href="/at-school.html", class="Stripe-navLink is-current") At school
+        a(href="/events.html", class="Stripe-navLink") Events
+        a(href="/contact.html", class="Stripe-navLink") Find us
+        
+      div(class="Stripe-text")
+        h2 LET THEM BE.
+        p Popular throughout the world, KAPLA encourages logic, develops creativity, and stimulates concentration, patience and perseverance. KAPLA allows you to give free rein to your creativity. Let your children tell stories they want with KAPLA.
+
+      div(class="Stripe-video")
+        video(loop, muted, autoplay, poster='videos/poster.png')
+          source(src='videos/header.webm', type='video/webm')
+          source(src='videos/header.mp4', type='video/mp4')
+
+    section(class='Title Title--school')
+      h1 AT SCHOOL
+
+    section(class='Info')
+      div(class='u-container')
+        div(class='Grid Grid--gutters')
+          div(class='Grid-cell Grid-cell--6')
+            h4 A pedagogic tool
+            p KAPLA is a toy but also an educational tool used in the National Education. The use of the identical planks, without any element of fixation, develops skills to thinks in a three dimensional space and permits a child to discover and mature his/her methods of construction.
+            p This game stimulates the knowledge of geometry, physics and technology, initiating the child to the world of art, the universe of forms and volumes.
+            p KAPLA fascinates and arouse enthusiasm, develops agility, balance and concentration skills.
+            p The child engages itself, alone or with its parents or friends to realise original as well as challenging creations. It chooses and organizes the forms according to its creativity. This activity asks at the same time precision and imagination. KAPLA, a mathematical and reflection game, appeal as well logic as imagination. It is a complete game adapted at all ages.
+            p The KAPLA builder is a constructor of the “Ephemeral”. The creation will always end  by collapsing. What rests is a little pile of planks, again available for a new creation. What counts is not to realise something but to fulfil yourself by creating.
+
+          div(class='Grid-cell Grid-cell--6')
+            img(class='u-mg--l', src='img/school-img.png')
+
+        div(class='Grid Grid--gutters u-mgt--xl')
+          div(class='Grid-cell Grid-cell--9')
+            div(class='Card Info-freeShipping')
+              div(class='Badge Badge--kapla Badge--yellow') Free shipping
+              h5 Add Options
+                br
+                | to your own box
+                br
+                | of Kapla
+              img(src='img/free-shipping-btn.png')
+          div(class='Grid-cell Grid-cell--3')
+            div(class='Card Info-kit')
+              h6 Please your old soul
+              h5 Our ancestral pedagogic Kit
+              div(class='Badge Badge--kapla Badge--yellow') FROM $29
+
+        div(class='Info-videoPlayer')
+
+        h4(class='u-tac') Be a part of our team !
+        div(class='Grid Grid--gutters')
+          div(class='Grid-cell Grid-cell--6')
+            p KAPLA is willing to make everyone participate. Therefor you can download the KAPLA template and let your child or even yourself ! try to be the next face of our commnunication.
+            p Each drawing is posted on our social network online and trhee of them every 6 month is receiving a spacial prize. The drawings that are elected is printed in large poster and you will be able to see it on the street !  
+        div(class='Info-howTo')
+
+    include includes/footer.pug
+
+    script(async, src='/browser-sync/browser-sync-client.js?v=2.18.5')
+    script(src='js/scripts.js')

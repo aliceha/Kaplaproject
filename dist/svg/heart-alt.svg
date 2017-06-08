@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Heart Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="product" transform="translate(-448.000000, -2246.000000)" fill="#3A405B">
+            <g id="CRAFT" transform="translate(46.000000, 1266.000000)">
+                <g id="Product-Card-2" transform="translate(91.000000, 0.000000)">
+                    <g id="Add-to-Wishlist" transform="translate(287.000000, 966.000000)">
+                        <path d="M32.0681152,27.9443359 C32.0681152,27.9443359 24.3540039,22.2387695 24.1157227,18.0432129 C23.7353516,15.0273438 28.0595703,12.3859863 31.4538573,15.4560547 C32.1652831,16.1228028 32.0759277,16.1240234 32.0759277,16.1240234 C32.0759277,16.1240234 32.2385253,16.1452637 32.7783202,15.4560547 C34.2509765,13.1948243 40.4370117,13.583252 40.036377,18.1157227 C39.7004633,22.2585014 32.0681152,27.9443359 32.0681152,27.9443359 Z" id="Heart-Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

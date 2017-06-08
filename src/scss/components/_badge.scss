@@ -1,0 +1,23 @@
+.Badge--kapla {
+  color: $white;
+  border-radius: 4px;
+  padding: 5px 8px;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: bold;
+}
+
+.Badge--blue {
+  background-color: $blue-1;
+}
+
+.Badge--yellow {
+  background-color: $yellow;
+}
+
+.Badge--ginger {
+  background-color: $ginger-red-1;
+}

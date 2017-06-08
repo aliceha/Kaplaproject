@@ -1,0 +1,114 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Alice Habay')
+    title Kapla
+    link(href='style.css', rel='stylesheet')
+    link(href='img/favicon.png', type='image/x-png', rel='icon')
+
+  body(class='Page', data-scroll)
+    include includes/header.pug
+
+    section(class="Stripe u-container")
+      nav(class="Stripe-nav")
+        a(href="/", class="Stripe-navLink is-current") Home
+        a(href="/products.html", class="Stripe-navLink") Products
+        a(href="/at-school.html", class="Stripe-navLink") At school
+        a(href="/events.html", class="Stripe-navLink") Events
+        a(href="/contact.html", class="Stripe-navLink") Find us
+        
+      div(class="Stripe-text")
+        h2 LET THEM BE.
+        p Popular throughout the world, KAPLA encourages logic, develops creativity, and stimulates concentration, patience and perseverance. KAPLA allows you to give free rein to your creativity. Let your children tell stories they want with KAPLA.
+
+      div(class="Stripe-video")
+        video(loop, muted, autoplay, poster='videos/poster.png')
+          source(src='videos/header.webm', type='video/webm')
+          source(src='videos/header.mp4', type='video/mp4')
+
+    section(class='Title Title--home')
+      h1 HOME
+
+    section(class='Info')
+      div(class='u-container')
+        div(class='Grid')
+          div(class='Grid-cell Grid-cell--4')
+            h4 What is Kapla?
+            p KAPLA is a construction toy made up from a set of identical elements whose proportions correspond to: 3 thicknesses for 1 width ans 5 widths for 1 length.
+            p The principle is simple: each plank is placed one on top of the other, without any fixation and you just let your imagination go.
+            p KAPLA is suitable for children aged 3 and up. Thanks to its simplicity and its special designed dimensions, this consruction toy enables to realise spectacular buildings or huge creations without any limits.
+            p KAPLA is at once a creative, a reflection as well as a dexterity toy which gives as much joy to the small ones as adults.
+            p KAPLA is used as an effective educational tool in many schools around the world.
+          div(class='Grid-cell Grid-cell--8')
+            img(class='u-mg--l', src='img/schema.png')
+        h4 Why choose Kapla?
+        div(class='Grid Grid--gutters')
+          div(class='Grid-cell Grid-cell--3')
+            h6(class='u-tac') NATURAL MATERIAL
+            img(src='img/natural.png')
+          div(class='Grid-cell Grid-cell--3')
+            h6(class='u-tac') LONG LASTING
+            img(src='img/long-lasting.png')
+          div(class='Grid-cell Grid-cell--3')
+            h6(class='u-tac') PEDAGOGIC TOOL
+            img(src='img/pedagogic.png')
+          div(class='Grid-cell Grid-cell--3')
+            h6(class='u-tac') FOR ALL AGES
+            img(src='img/all-ages.png')
+
+        div(data-name='counter_wrapper', class='Info-sold u-mgt--l u-tac')
+          img(src='img/kapla.png')
+          
+          div(class='Info-soldCount')
+            span(data-name='counter_figure', data-count='7', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='7', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='3', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='9', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='8', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='7', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='3', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='9', class='Info-soldFigure') 0
+            span(data-name='counter_figure', data-count='0', class='Info-soldFigure') 0
+          span(class='Info-soldCaption') KAPLA SOLD
+
+    section(class='Promo')
+      h3 Craft your own box of Kapla
+      p Decide how many Kaplas you want in your box, the colors of them and even the material of the box. To finish, you can add books and some instructions in it.
+      button(type='button', class='Promo-btn') Let’s go
+      button(type='button', class='Promo-btn Promo-btn--outline') Learn more
+
+    section(class='Testimonials')
+      div(class='u-container')
+        h3 What Our Customers Have to Say
+        h4(class='u-tac') KAPLA is close to you
+        div(class="Grid Grid--gutters")
+          div(class="Grid-cell Grid-cell--4")
+            figure(class='Media')
+              img(class='Media-img Avatar u-mgr--s', src='/img/user1.png')
+              div(class='Media-content')
+                h6 Celia Martin
+                p(class='Testimonials-role') Grand-mother of 2
+            p(class='Testimonials-quote') KAPLA is the best toy to offer, I like the fact that my grand children play with natural product and are safe with it.
+          div(class="Grid-cell Grid-cell--4")
+            figure(class='Media')
+              img(class='Media-img Avatar u-mgr--s', src='/img/user2.png')
+              div(class='Media-content')
+                h6 Alexandre Dufayet
+                p(class='Testimonials-role') Uncle of Theo
+            p(class='Testimonials-quote') My nephew swears by this toy, it allows him to be free to imagine what he wants to imagine.
+          div(class="Grid-cell Grid-cell--4")
+            figure(class='Media')
+              img(class='Media-img Avatar u-mgr--s', src='/img/user3.png')
+              div(class='Media-content')
+                h6 Flore Dallenne
+                p(class='Testimonials-role') Aunt of Clara
+            p(class='Testimonials-quote') I offered some Kapla to my niece because i liked the fact that this toy is non figurative and does not make sexual cleavage.
+
+    include includes/footer.pug
+
+    script(async, src='/browser-sync/browser-sync-client.js?v=2.18.5')
+    script(src='js/scripts.js')

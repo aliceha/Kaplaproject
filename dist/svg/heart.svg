@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="7px" viewBox="0 0 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-185.000000, -4471.000000)" fill-rule="nonzero" fill="#B4B8C9">
+            <g id="FOOTER" transform="translate(-21.000000, 3952.000000)">
+                <g id="mentions" transform="translate(77.000000, 513.000000)">
+                    <g id="Copyright">
+                        <path d="M130.795685,6 C130.335543,6 129.875052,6.18004127 129.52492,6.54280337 C128.824629,7.26834102 128.825424,8.43395713 129.52492,9.16008455 L132.403076,12.147644 C132.428446,12.1738656 132.46337,12.1886704 132.499856,12.1886704 C132.536342,12.1886704 132.571266,12.1738656 132.596636,12.147644 C133.556776,11.1528726 134.514639,10.1590706 135.474792,9.16428565 C136.175069,8.43875069 136.175069,7.27255559 135.474792,6.54701793 C134.774501,5.82148028 133.633553,5.82146681 132.933263,6.54701793 L132.499849,6.99304794 L132.06645,6.54280337 C131.716304,6.18004127 131.255813,6 130.795685,6 L130.795685,6 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

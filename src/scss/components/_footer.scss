@@ -1,0 +1,79 @@
+.Footer {
+  padding: $pd--l 0;
+  background-image: url('img/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h4 {
+    font-size: 12px;
+    line-height: 15px;
+    color: $dark-2;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  address {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    color: rgba($dark-2, .6);
+  }
+}
+
+.Footer-tweet {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba($dark-2, .5);
+}
+
+.Footer-credits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer-nav {
+  width: 75%;
+  text-align: center;
+  margin: $mg--l auto;
+  border-top: 1px solid $white;
+
+  a {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: $dark-2;
+    padding: $pd--m;
+  }
+}
+
+.Footer-instaRow {
+  line-height: 0;
+  font-size: 0;
+
+  img {
+    margin: 0 10px 10px 0;
+  }
+}
+
+.Footer-socialLinks {
+  a {
+    color: $random-gray-2;
+
+    + a:before {
+      content: "•";
+      margin: 0 $mg--s;
+    }
+  }
+}
+
+.Footer-nlInput {
+  border: 0;
+  outline: none;
+  appearance: none;
+  padding: 12px 12px 12px 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-image: url('svg/message.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}

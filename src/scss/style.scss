@@ -1,5 +1,24 @@
-/* Styles */
+@import "tapestry";
 
-body {
-  background: orange;
-}
+$mfp-overlay-color: transparent;
+$mfp-shadow: 0;
+$mfp-include-arrows: false;
+$mfp-include-iframe-type: false;
+$mfp-image-background: transparent;
+
+@import "../../node_modules/tapestry-css/src/scss/app.scss";
+@import "../../node_modules/magnific-popup/src/css/main.scss";
+
+@import "colors";
+@import "common";
+
+@import "components/header";
+@import "components/footer";
+@import "components/badge";
+@import "components/card";
+@import "components/stripe";
+@import "components/title";
+@import "components/info";
+@import "components/product";
+@import "components/promo";
+@import "components/testimonials";

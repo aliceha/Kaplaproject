@@ -1,0 +1,156 @@
+.Info {
+  background-color: $white;
+
+  h4 {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 60px 0;
+  }
+
+  h6 {
+    margin-bottom: 40px;
+    color: $random-gray-3;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}
+
+.Info-soldCount {
+  width: 550px;
+  display: inline-block;
+  text-align: center;
+}
+
+.Info-soldFigure {
+  padding-bottom: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  color: $dark-1;
+
+  &:nth-of-type(1) {
+    margin-left: 40px;
+  }
+
+  &:nth-of-type(2) {
+    color: $blue-1;
+  }
+
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+    color: $blue-2;
+  }
+
+  &:nth-of-type(3) {
+    color: $ginger-red-1;
+  }
+
+  &:nth-of-type(6) {
+    color: $ginger-red-2;
+  }
+
+  &:nth-of-type(7) {
+    color: $light-gray-2;
+  }
+
+  &:nth-of-type(8) {
+    color: $yellow;
+  }
+
+  &:nth-of-type(3n) {
+    padding-right: 10px;
+  }
+}
+
+.Info-soldCaption {
+  margin-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: $random-gray-3;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.Info-howTo {
+  background-image: url('img/how-to-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 80vw;
+  margin-top: -100px;
+}
+
+.Info-videoPlayer {
+  margin: 100px 0;
+  background-image: url('img/video.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 33vw;
+}
+
+.Info-freeShipping {
+  padding: $pd--l;
+  color: $white;
+  background-color: $ginger-red-2;
+  background-image: url('img/free-shipping.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 99%;
+  min-height: 350px;
+
+  h5 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: $mg--l 0;
+  }
+}
+
+.Info-kit {
+  padding: $pd--m;
+  background-color: $snow;
+  background-image: url('img/kit.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 350px;
+
+  h5 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: $mg--l 0;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.Info-centers {
+  margin-bottom: $mg--xl;
+  background-image: url('img/centers.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 90%;
+  min-height: 1000px;
+}
+
+.Info-contact {
+  background-image: url('img/contact.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 750px;
+}

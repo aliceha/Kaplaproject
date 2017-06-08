@@ -1,0 +1,45 @@
+.Promo {
+  background-image: url('img/promo-bg.png');
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  padding: 75px 0;
+
+  h3 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 590px;
+    margin: 0 auto 60px;
+    font-weight: bold;
+  }
+}
+
+.Promo-btn {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  padding: 10px $pd--m;
+  background-color: $blue-1;
+  border: 2px solid $blue-1;
+  border-radius: 25px;
+  width: 170px;
+
+  + .Promo-btn {
+    margin-left: 10px;
+  }
+}
+
+.Promo-btn--outline {
+  background-color: transparent;
+  border: 2px solid rgba($random-gray, .15);
+  border-radius: 25px;
+}

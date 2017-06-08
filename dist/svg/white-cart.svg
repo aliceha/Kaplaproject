@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Shopping Cart Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="product" transform="translate(-245.000000, -2245.000000)" fill="#FEFEFE">
+            <g id="CRAFT" transform="translate(46.000000, 1266.000000)">
+                <g id="Product-Card-2" transform="translate(91.000000, 0.000000)">
+                    <g id="Add-to-Cart" transform="translate(82.000000, 966.000000)">
+                        <path d="M40,26.02 C41.105,26.02 42,26.912 42,28.013 C42,29.112 41.105,30.004 40,30.004 C38.895,30.004 38,29.112 38,28.013 C38,26.912 38.895,26.02 40,26.02 M32,26.02 C33.104,26.02 34,26.912 34,28.013 C34,29.112 33.104,30.004 32,30.004 C30.895,30.004 30,29.112 30,28.013 C30,26.912 30.895,26.02 32,26.02 M44,17.058 L43,20.046 C42.63,20.883 42.105,22.037 41,22.037 L31.36,22.037 L31.478,23.034 L44,23.034 L43,25.025 L30.352,25.025 L29.709,25.1 L28.522,15.067 L27,15.067 C26.447,15.067 26,14.621 26,14.071 C26,13.521 26.352,13.014 26.904,13.014 L30.291,13 L30.545,15.15 C30.67,15.101 30.812,15.067 31,15.067 L43,15.067 C44.105,15.067 44,15.959 44,17.058" id="Shopping-Cart-Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

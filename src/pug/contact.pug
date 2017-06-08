@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Alice Habay')
+    title Kapla
+    link(href='style.css', rel='stylesheet')
+    link(href='img/favicon.png', type='image/x-png', rel='icon')
+
+  body(class='Page')
+    include includes/header.pug
+
+    section(class="Stripe u-container")
+      nav(class="Stripe-nav")
+        a(href="/", class="Stripe-navLink") Home
+        a(href="/products.html", class="Stripe-navLink") Products
+        a(href="/at-school.html", class="Stripe-navLink") At school
+        a(href="/events.html", class="Stripe-navLink") Events
+        a(href="/contact.html", class="Stripe-navLink is-current") Find us
+        
+      div(class="Stripe-text")
+        h2 LET THEM BE.
+        p Popular throughout the world, KAPLA encourages logic, develops creativity, and stimulates concentration, patience and perseverance. KAPLA allows you to give free rein to your creativity. Let your children tell stories they want with KAPLA.
+
+      div(class="Stripe-video")
+        video(loop, muted, autoplay, poster='videos/poster.png')
+          source(src='videos/header.webm', type='video/webm')
+          source(src='videos/header.mp4', type='video/mp4')
+
+    section(class='Title Title--contact')
+      h1 FIND US
+
+    section(class='Info')
+      div(class='u-container')
+        div(class='Grid Info-centers')
+          div(class='Grid-cell Grid-cell--6')
+            h4 Kapla centers
+            p KAPLA cares about the community around it’s product.
+            p Because Kapla allows you to create so different thing we offer you some spaces to show them or learn about creation you can make. At our centers you can meet people who loves KAPLA too and challenge yourself. Come meet your new team mates and try to make others dream !
+            p(class='u-mgt--l') Our KAPLA activity centers in France:
+
+      div(class='Info-contact')
+
+    include includes/footer.pug
+
+    script(async, src='/browser-sync/browser-sync-client.js?v=2.18.5')
+    script(src='js/scripts.js')

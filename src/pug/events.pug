@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Alice Habay')
+    title Kapla
+    link(href='style.css', rel='stylesheet')
+    link(href='img/favicon.png', type='image/x-png', rel='icon')
+
+  body(class='Page')
+    include includes/header.pug
+
+    section(class="Stripe u-container")
+      nav(class="Stripe-nav")
+        a(href="/", class="Stripe-navLink") Home
+        a(href="/products.html", class="Stripe-navLink") Products
+        a(href="/at-school.html", class="Stripe-navLink") At school
+        a(href="/events.html", class="Stripe-navLink is-current") Events
+        a(href="/contact.html", class="Stripe-navLink") Find us
+        
+      div(class="Stripe-text")
+        h2 LET THEM BE.
+        p Popular throughout the world, KAPLA encourages logic, develops creativity, and stimulates concentration, patience and perseverance. KAPLA allows you to give free rein to your creativity. Let your children tell stories they want with KAPLA.
+
+      div(class="Stripe-video")
+        video(loop, muted, autoplay, poster='videos/poster.png')
+          source(src='videos/header.webm', type='video/webm')
+          source(src='videos/header.mp4', type='video/mp4')
+
+    section(class='Title Title--events')
+      h1 EVENTS
+
+    section(class='Info')
+      div(class='u-container u-pdv--xl')
+        div(class='Grid')
+          div(class='Grid-cell Grid-cell--6')
+            p Every year, KAPLA is present at several important toy fairs in Europe:
+
+        div(class='Card')
+          div(class='Grid')
+            div(class='Grid-cell Grid-cell--6 Grid-cell--stretched Card-img Card-img--events')
+            div(class='Grid-cell Grid-cell--6 Card-content')
+              h4 Toy Fair London, United Kingdom
+              h6 LONDON       24-26 January 2016
+              p The Toy Fair is the UK’s only dedicated toy, game and hobby trade show taking place annually at the end of January at Olympia Grand and West Halls, London. The toy industry’s showcase welcomes more than 270 companies exhibiting thousands of products to visitors including retailers, buyers, media and the wider industry.
+              button(type='button', class='Promo-btn') See more
+
+        div(class='Card u-mgt--xl')
+          header(class='Card-header') Events to come
+          div(class='Grid')
+            div(class='Grid-cell Grid-cell--4 Grid-cell--stretched Card-item')
+              div(class='Badge Badge--blue') Germany
+              h5
+                | Toy Fair Nurnberg
+                br
+                | 27 January – 1 February 2016
+              a(href='#', class='Card-seeMoreBtn') See more
+            div(class='Grid-cell Grid-cell--4 Grid-cell--stretched Card-item')
+              div(class='Badge Badge--yellow') France
+              h5
+                | Festival International des Jeux Cannes
+                br
+                | 26-28 February 2016
+              a(href='#', class='Card-seeMoreBtn') See more
+            div(class='Grid-cell Grid-cell--4 Grid-cell--stretched Card-item')
+              div(class='Badge Badge--ginger') UK
+              h5
+                | Education Show, Birmingham
+                br
+                | 17-19 March 2016
+              a(href='#', class='Card-seeMoreBtn') See more
+
+    include includes/footer.pug
+
+    script(async, src='/browser-sync/browser-sync-client.js?v=2.18.5')
+    script(src='js/scripts.js')

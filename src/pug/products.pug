@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Alice Habay')
+    title Kapla
+    link(href='style.css', rel='stylesheet')
+    link(href='img/favicon.png', type='image/x-png', rel='icon')
+
+  body(class='Page')
+    include includes/header.pug
+
+    section(class="Stripe u-container")
+      nav(class="Stripe-nav")
+        a(href="/", class="Stripe-navLink") Home
+        a(href="/products.html", class="Stripe-navLink is-current") Products
+        a(href="/at-school.html", class="Stripe-navLink") At school
+        a(href="/events.html", class="Stripe-navLink") Events
+        a(href="/contact.html", class="Stripe-navLink") Find us
+        
+      div(class="Stripe-text")
+        h2 LET THEM BE.
+        p Popular throughout the world, KAPLA encourages logic, develops creativity, and stimulates concentration, patience and perseverance. KAPLA allows you to give free rein to your creativity. Let your children tell stories they want with KAPLA.
+
+      div(class="Stripe-video")
+        video(loop, muted, autoplay, poster='videos/poster.png')
+          source(src='videos/header.webm', type='video/webm')
+          source(src='videos/header.mp4', type='video/mp4')
+
+    section(class='Title Title--products')
+      h1 PRODUCTS
+
+
+    section(class='Product')
+      div(class='u-container')
+        h2 Craft your own box
+        div(class='Card u-mgb--l')
+          div(class='Grid')
+            div(class='Grid-cell Grid-cell--8 u-pd--l')
+              p(class='u-tar') $59.99
+              img(src='img/product-rating.png')
+              div(class='u-mgt--l')
+              img(src='img/product-tabs.png')
+              p(class='u-mgt--l') You can easily craft your own box of KAPLA by selecting the amount of them, the type of material of your box and even add some books to it.
+              div(class='u-mgt--l')
+              img(src='img/product-colors.png')
+              div(class='u-mgt--l')
+              img(src='img/product-settings.png')
+              div(class='u-mgt--l')
+              img(src='img/product-qty.png')
+              div(class='u-mgt--l')
+                button(type='button', data-name='cart_add', class='Product-buyBtn') Add to cart
+                button(type='button', class='Product-buyBtn Product-buyBtn--outline') Add to wishlist
+            div(class='Grid-cell Grid-cell--4 Grid-cell--stretched Product-preview')
+
+    section(class="Product-showcase")
+      div(class='u-container')
+        h2 Or please your nostalgic soul
+
+        div(class='Grid Grid--gutters')
+          div(class='Grid-cell Grid-cell--6')
+            div(class='Card Product-card Product-card--yellow')
+              h4 200 Kapla
+              p Our trusted product selled since 1987.
+                br
+                | 200 KAPLA in a cartboard box.
+              img(class='Product-cardBtn', src='img/buy-now-btn.png')
+          div(class='Grid-cell Grid-cell--6')
+            div(class='Card Product-card Product-card--blue u-tar')
+              h4 Pedagogic Kit
+              p Discover our KAPLA planks in your school,
+                br
+                | we offer a Pedagogical Kit including 1000 planks in a bag,
+                br
+                | 4 art books, and 3 instruction cards.
+                br
+                | 200 KAPLA in a cartboard box.
+              img(class='Product-cardBtn', src='img/buy-now-btn.png')
+        h2(class='u-tac u-mgt--xl') What to do with your KAPLA
+        img(src='img/videos.png')
+
+    include includes/footer.pug
+
+    script(async, src='/browser-sync/browser-sync-client.js?v=2.18.5')
+    script(src='js/scripts.js')

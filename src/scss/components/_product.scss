@@ -1,0 +1,71 @@
+.Product {
+  padding: $pd--l 0;
+  background-color: $white;
+}
+
+.Product-preview {
+  background-image: url('img/preview.png');
+  background-size: 100% auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: $random-gray-4;
+}
+
+.Product-showcase {
+  padding: $pd--l 0;
+  background-color: $white;
+}
+
+.Product-card {
+  color: $white;
+  padding: $pd--m;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+}
+
+.Product-card--yellow {
+  background-color: $yellow;
+  background-image: url('img/kapla-bg.png');
+  background-position: center right;
+}
+
+.Product-card--blue {
+  background-color: $blue-2;
+  background-image: url('img/pedagogic-bg.png');
+  background-position: center left;
+}
+
+.Product-cardBtn {
+  margin-top: $mg--l;
+}
+
+.Product-buyBtn {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  padding: 10px $pd--m 10px 40px;
+  background-color: $blue-1;
+  border: 2px solid $blue-1;
+  border-radius: 25px;
+  width: 190px;
+  background-image: url('svg/white-cart.svg');
+  background-position: 15px center;
+  background-repeat: no-repeat;
+
+  + .Product-buyBtn {
+    margin-left: 10px;
+  }
+}
+
+.Product-buyBtn--outline {
+  background-color: transparent;
+  border: 2px solid rgba($random-gray, .15);
+  border-radius: 25px;
+  color: $blue-3;
+  background-image: url('svg/heart-alt.svg');
+}
