@@ -2,6 +2,7 @@ var browserSync   = require('browser-sync').create();
 var gulp          = require('gulp');
 var pug           = require('gulp-pug');
 var sass          = require('gulp-sass');
+var concat        = require('gulp-concat');
 var base64        = require('gulp-base64');
 var prefix        = require('gulp-autoprefixer');
 var rename        = require('gulp-rename');
@@ -31,6 +32,16 @@ gulp.task('pug', function () {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('scripts', function () {
+  return gulp.src([
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+      './src/js/kapla.js'
+    ])
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('sass', function () {
   return gulp.src('./src/scss/style.scss')
 		.pipe(sass.sync({
@@ -48,9 +59,10 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('build', ['pug', 'sass']);
+gulp.task('build', ['pug', 'scripts', 'sass']);
 
-gulp.task('default', ['pug', 'sass', 'browser-sync'], function () {
-  gulp.watch('**/*.scss', ['sass']);
-  gulp.watch('**/*.pug', ['pug']);
+gulp.task('default', ['pug', 'sass', 'scripts', 'browser-sync'], function () {
+  gulp.watch('src/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.js', ['scripts']);
+  gulp.watch('src/**/*.pug', ['pug']);
 });
