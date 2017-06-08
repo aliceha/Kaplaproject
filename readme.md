@@ -11,19 +11,20 @@ $ npm install
 $ yarn install
 ```
 
-## Features
-
-* Sass
-* Live reloading
-* Autoprefixing
-* Minifying
-
-## Run
+## Development
 
 ```bash
 $ npm run start
-$ yarn
+$ yarn start
 ```
+
+## Serve
+
+```bash
+$ npm run start
+$ yarn serve
+```
+
 
 ## Links
 - [gulp-boilerplate](https://github.com/GabrielCousin/gulp-boilerplate)
